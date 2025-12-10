@@ -6,7 +6,7 @@ function ProductCard({title, price, description, inStock}) {
             <h2>{description}</h2>
 
             <p>
-                {inStock? <span><h2>Available</h2></span> : <span><h2>Not in Stock</h2></span>}
+                {inStock? <span>Available</span> : <span>Not in Stock</span>}
             </p>
         </div>
     )
