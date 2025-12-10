@@ -39,41 +39,42 @@ function App() {
 
     <div>
       <MovieCard
-      title = "Before Sunrise"
-      rating = "9.8"
-      year = "1998"
-      isAvailable="true" />
+        title="Before Sunrise"
+        rating="9.8"
+        year="1998"
+        isAvailable="true" />
       <NotificationCard
-      type = "like"
-      user = "Imran"
-      app = "Instagram" />
+        type="like"
+        user="Imran"
+        app="Instagram" />
       <NotificationCard
-      type = "comment"
-      user = "Imran"
-      message = "hi"
-      app = "snapchat" />
+        type="comment"
+        user="Imran"
+        message="hi"
+        app="snapchat" />
       <NotificationCard
-      type = "follow"
-      user = "Imran"
-      app = "LinkedIn" />
+        type="follow"
+        user="Imran"
+        app="LinkedIn" />
       <NotificationCard
-      type = "other"
-      user = "Imran"
-      app = "Whatsapp" />
+        type="other"
+        user="Imran"
+        app="Whatsapp" />
 
-      
+
       <Profile
         name="Imran"
         age="21"
         country="India"
         skills={["React", "JavaScript", "HTML"]}
-        isActive = "True" />
-         <Profile
-        name="sdfsdf"
-        age="2431"
-        country="India"
-        skills={["React", "JavaScript", "HTML"]}
-        isActive = "False" />
+        isActive={true} />
+      <Profile
+        name="John"
+        age={25}
+        country="USA"
+        skills=""
+        isActive={false}
+      />
       <CartItem
         name="Iphone 17"
         price="90000"
