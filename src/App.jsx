@@ -5,7 +5,9 @@ import ProductCard from './ProductCard.jsx';
 import FeatureList from './features.jsx';
 import Notification from './notif.jsx';
 import CartItem from './cartItem.jsx';
-
+import Profile from './profileCard.jsx'
+import NotificationCard from './notificationcard.jsx';
+import MovieCard from './Moviecard.jsx'
 
 function UserCard() {
   const name = "Imran";
@@ -34,26 +36,63 @@ function App() {
   let username = "imran";
 
   return (
-    <div>
-      <CartItem
-      name = "Iphone 17"
-      price = "90000"
-      initialQty={1}/>
 
-       <Notification 
-      message = "File uploaded successfully"
-      type = "success"
-      time  ="2 mins ago"
+    <div>
+      <MovieCard
+      title = "Before Sunrise"
+      rating = "9.8"
+      year = "1998"
+      isAvailable="true" />
+      <NotificationCard
+      type = "like"
+      user = "Imran"
+      app = "Instagram" />
+      <NotificationCard
+      type = "comment"
+      user = "Imran"
+      message = "hi"
+      app = "snapchat" />
+      <NotificationCard
+      type = "follow"
+      user = "Imran"
+      app = "LinkedIn" />
+      <NotificationCard
+      type = "other"
+      user = "Imran"
+      app = "Whatsapp" />
+
+      
+      <Profile
+        name="Imran"
+        age="21"
+        country="India"
+        skills={["React", "JavaScript", "HTML"]}
+        isActive = "True" />
+         <Profile
+        name="sdfsdf"
+        age="2431"
+        country="India"
+        skills={["React", "JavaScript", "HTML"]}
+        isActive = "False" />
+      <CartItem
+        name="Iphone 17"
+        price="90000"
+        initialQty={1} />
+
+      <Notification
+        message="File uploaded successfully"
+        type="success"
+        time="2 mins ago"
       />
-      <Notification 
-      message = "Login failed"
-      type = "error"
-      time  ="10 mins ago"
+      <Notification
+        message="Login failed"
+        type="error"
+        time="10 mins ago"
       />
-      <Notification 
-      message = "Low battery"
-      type = "warning"
-      time  ="12 mins ago"
+      <Notification
+        message="Low battery"
+        type="warning"
+        time="12 mins ago"
       />
       <FeatureList features={laptopFeatures} />
       <FeatureList features={[]} />
@@ -72,7 +111,7 @@ function App() {
         description="Nice sound quality"
         inStock={false}   // ✔ fixed
       />
-     
+
       <UserCard />
       <Student />
       <Todo />
