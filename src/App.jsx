@@ -109,7 +109,7 @@ function App() {
         title="Sony Headphone"
         price={85000}
         description="Nice sound quality"
-        inStock={false}   // ✔ fixed
+        inStock={false}   
       />
 
       <UserCard />
