@@ -12,7 +12,8 @@ import Biodata from './form.jsx';
 import UserForm from './userform.jsx';
 import Registerform from './registerform.jsx';
 import Result from './marks.jsx';
-
+import FriendsList from './friendslist.jsx';
+import Likebutton from './likebutton.jsx';
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -42,6 +43,8 @@ function App() {
   return (
 
     <div>
+      <Likebutton />
+      <FriendsList />
       <Result
       name = "Imran"
       marks = {10} />
