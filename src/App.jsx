@@ -9,6 +9,8 @@ import Profile from './profileCard.jsx'
 import NotificationCard from './notificationcard.jsx';
 import MovieCard from './Moviecard.jsx'
 import Biodata from './form.jsx';
+import UserForm from './userform.jsx';
+import Registerform from './registerform.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -39,6 +41,8 @@ function App() {
   return (
 
     <div>
+      <Registerform />
+      <UserForm />
       <Biodata
       name= "Imran"
       age = "21"
