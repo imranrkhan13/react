@@ -8,6 +8,7 @@ import CartItem from './cartItem.jsx';
 import Profile from './profileCard.jsx'
 import NotificationCard from './notificationcard.jsx';
 import MovieCard from './Moviecard.jsx'
+import Biodata from './form.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -38,6 +39,12 @@ function App() {
   return (
 
     <div>
+      <Biodata
+      name= "Imran"
+      age = "21"
+      city = "Mumbai"
+      bio = "React Developer"
+      isMarried = {true} />
       <MovieCard
         title="Before Sunrise"
         rating="9.8"
@@ -116,6 +123,7 @@ function App() {
       <UserCard />
       <Student />
       <Todo />
+    
     </div>
   );
 }
