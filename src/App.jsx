@@ -11,6 +11,7 @@ import MovieCard from './Moviecard.jsx'
 import Biodata from './form.jsx';
 import UserForm from './userform.jsx';
 import Registerform from './registerform.jsx';
+import Result from './marks.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -41,6 +42,9 @@ function App() {
   return (
 
     <div>
+      <Result
+      name = "Imran"
+      marks = {10} />
       <Registerform />
       <UserForm />
       <Biodata

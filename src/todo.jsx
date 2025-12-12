@@ -18,9 +18,9 @@ function Todo(){
         setTasks(newTasks);
     }
     return(
-        <div>
+        <div class="form-group">
             <h2>Todo App</h2>
-            <input value= {input} onChange={(e) => setInput(e.target.value)} placeholder="Write a Task"/>
+            <input class="form-control" id="exampleInputName1" value= {input} onChange={(e) => setInput(e.target.value)} placeholder="Write a Task"/>
             <button onClick={handleAdd}>Add</button>
             <ul>
                 {tasks.map((tasks, index) => (

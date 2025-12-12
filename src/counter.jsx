@@ -11,9 +11,9 @@ function Counter() {
     return (
         <div>
             <h2>{count}</h2>
-            <button onClick={() => setCount(count + 1)}>Increase</button>
-            <button onClick={() => setCount(count - 1)}>Decrease</button>
-            <button onClick={handleReset}>Reset</button>
+            <button className="btn btn-primary btn-lg" onClick={() => setCount(count + 1)}>Increase</button>
+            <button className="btn btn-primary btn-lg" onClick={() => setCount(count - 1)}>Decrease</button>
+            <button className="btn btn-primary btn-lg" onClick={handleReset}>Reset</button>
         </div>
     )
 

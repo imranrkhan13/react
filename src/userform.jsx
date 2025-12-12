@@ -9,19 +9,19 @@ function UserForm(){
     
     return(
         <div className="form-group">
-            <input
+            <input class="form-control" id="exampleInputName1"
             placeholder = "Enter your Name"
             value = {name}
             onChange={(e) => setName(e.target.value)}
             />
             <br></br>
-            <input
+            <input class="form-control" id="exampleInputEmail1"
             placeholder="name@example.com"
             value = {email}
             onChange={(e) => setEmail(e.target.value)} />
                         <br></br>
 
-            <input
+            <input class="form-control" id="exampleInputAge1"
             type="number"
             placeholder = "Enter your Age"
             value = {age}
@@ -29,14 +29,14 @@ function UserForm(){
             />
                         <br></br>
 
-             <input
+            <input class="form-control" id="exampleInputCity1"
             placeholder = "Enter your City"
             value = {city}
             onChange={(e) => setCity(e.target.value)}
             />
                         <br></br>
 
-            <input
+            <input class="form-control" id="exampleInputBio1"
             placeholder = "Enter Bio"
             value = {bio}
             onChange={(e) => setBio(e.target.value)}
