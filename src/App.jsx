@@ -21,7 +21,7 @@ import SignUp from './signup.jsx';
 import SearchFilter from './searchfilter.jsx';
 import Parent from './parentchild.jsx';
 import Dasboard from './dashboard(liftup).jsx';
-
+import ONOFF from './onoff.jsx'
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -51,6 +51,7 @@ function App() {
   return (
 
     <div>
+      <ONOFF />
       <Dasboard />
       <Parent />
       <SearchFilter />
