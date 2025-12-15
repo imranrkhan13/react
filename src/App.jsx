@@ -22,6 +22,8 @@ import SearchFilter from './searchfilter.jsx';
 import Parent from './parentchild.jsx';
 import Dasboard from './dashboard(liftup).jsx';
 import ONOFF from './onoff.jsx'
+import Text from './textotggle.jsx';
+import Limit from './limitnumber.jsx';
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -51,6 +53,8 @@ function App() {
   return (
 
     <div>
+      < Limit/>
+      < Text/>
       <ONOFF />
       <Dasboard />
       <Parent />
