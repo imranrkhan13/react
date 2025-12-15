@@ -20,7 +20,8 @@ import LoginForm from './login.jsx';
 import SignUp from './signup.jsx';
 import SearchFilter from './searchfilter.jsx';
 import Parent from './parentchild.jsx';
-import Childparent from './childparent.jsx';
+import Dasboard from './dashboard(liftup).jsx';
+
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -50,6 +51,7 @@ function App() {
   return (
 
     <div>
+      <Dasboard />
       <Parent />
       <SearchFilter />
       <SignUp />
