@@ -19,6 +19,8 @@ import CharacterCounter from './charactercounter.jsx';
 import LoginForm from './login.jsx';
 import SignUp from './signup.jsx';
 import SearchFilter from './searchfilter.jsx';
+import Parent from './parentchild.jsx';
+import Childparent from './childparent.jsx';
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -48,6 +50,7 @@ function App() {
   return (
 
     <div>
+      <Parent />
       <SearchFilter />
       <SignUp />
       <LoginForm />
