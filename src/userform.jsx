@@ -1,27 +1,30 @@
 // user form that updates while typing
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function UserForm(){
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
     const [bio, setBio] = useState("");
     const [city, setCity] = useState("");
     const [email, setEmail] = useState("");
+    useEffect(() => {
+        console.log("User typed: ", name || age || bio || city || email);
+    }, [name, age, bio, city, email])
     
     return(
         <div className="form-group">
-            <input class="form-control" id="exampleInputName1"
+            <input className="form-control" id="exampleInputName1"
             placeholder = "Enter your Name"
             value = {name}
             onChange={(e) => setName(e.target.value)}
             />
             <br></br>
-            <input class="form-control" id="exampleInputEmail1"
+            <input className="form-control" id="exampleInputEmail1"
             placeholder="name@example.com"
             value = {email}
             onChange={(e) => setEmail(e.target.value)} />
                         <br></br>
 
-            <input class="form-control" id="exampleInputAge1"
+            <input className="form-control" id="exampleInputAge1"
             type="number"
             placeholder = "Enter your Age"
             value = {age}
@@ -29,14 +32,14 @@ function UserForm(){
             />
                         <br></br>
 
-            <input class="form-control" id="exampleInputCity1"
+            <input className="form-control" id="exampleInputCity1"
             placeholder = "Enter your City"
             value = {city}
             onChange={(e) => setCity(e.target.value)}
             />
                         <br></br>
 
-            <input class="form-control" id="exampleInputBio1"
+            <input className="form-control" id="exampleInputBio1"
             placeholder = "Enter Bio"
             value = {bio}
             onChange={(e) => setBio(e.target.value)}

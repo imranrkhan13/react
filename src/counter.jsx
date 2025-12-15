@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Counter() {
     const [count, setCount] = useState(0);
+     useEffect(() => {
+        console.log("Count changed to:", count)
+      }, [count]);
+      
     const handleReset = () => {
         const isConfirmed = window.confirm("Are you sure you want to reset?");
         if (isConfirmed) {
@@ -9,13 +13,16 @@ function Counter() {
         }
     };
     return (
-        <div>
+        <div >
             <h2>{count}</h2>
             <button className="btn btn-primary btn-lg" onClick={() => setCount(count + 1)}>Increase</button>
-            <button className="btn btn-primary btn-lg" onClick={() => setCount(count - 1)}>Decrease</button>
+            <button className="btn btn-primary btn-lg m-3" onClick={() => setCount(count - 1)}>Decrease</button>
             <button className="btn btn-primary btn-lg" onClick={handleReset}>Reset</button>
         </div>
     )
 
 }
+
+
+
 export default Counter;

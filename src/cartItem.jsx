@@ -17,7 +17,7 @@ function CartItem({name, price, initialQty}){
             <h2>price: {price}</h2>
             <h2>Qty: {qty}</h2>
             <h2>Total: {price * qty}</h2>
-            <button onClick={increase}>+</button>
+            <button className="m-3"onClick={increase}>+</button>
             <button onClick={decrease}>-</button>
         </div>
     )

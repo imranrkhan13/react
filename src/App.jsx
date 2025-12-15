@@ -14,6 +14,10 @@ import Registerform from './registerform.jsx';
 import Result from './marks.jsx';
 import FriendsList from './friendslist.jsx';
 import Likebutton from './likebutton.jsx';
+import UseEffect from './useeffect.jsx';
+import CharacterCounter from './charactercounter.jsx';
+import LoginForm from './login.jsx';
+import SignUp from './signup.jsx';
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -43,6 +47,10 @@ function App() {
   return (
 
     <div>
+      <SignUp />
+      <LoginForm />
+      <CharacterCounter />
+      <UseEffect />
       <Likebutton />
       <FriendsList />
       <Result

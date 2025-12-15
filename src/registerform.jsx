@@ -34,33 +34,33 @@ function Registerform() {
             <h2>User Registration Form</h2>
 
             <form onSubmit={HandleSubmittedData}>
-                <div class="form-group">
-                    <input class="form-control" id="exampleInputName"
+                <div className="form-group">
+                    <input className="form-control" id="exampleInputName"
                         placeholder="Enter Name"
                         value={name}
                         onChange={(e) => setName(e.target.value)} />
                     <br></br>
 
-                    <input class="form-control" id="exampleInputAge" type="number"
+                    <input className="form-control" id="exampleInputAge" type="number"
                         placeholder="Enter Age"
                         value={age}
                         onChange={(e) => setAge(e.target.value)} />
                     <br></br>
 
-                    <input class="form-control" id="exampleInputCity"
+                    <input className="form-control" id="exampleInputCity"
                         placeholder="Enter City"
                         value={city}
                         onChange={(e) => setCity(e.target.value)} />
                     <br></br>
 
-                    <textarea class="form-control" id="exampleFormControlBio" rows="1"
+                    <textarea className="form-control" id="exampleFormControlBio" rows="1"
                         placeholder="Enter Bio"
                         value={bio}
                         onChange={(e) => setBio(e.target.value)}>
                     </textarea>
                     <br></br>
 
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button className="btn btn-primary m-3" type="submit">Submit</button>
                 </div>
             </form>
 
