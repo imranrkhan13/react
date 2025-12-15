@@ -18,6 +18,7 @@ import UseEffect from './useeffect.jsx';
 import CharacterCounter from './charactercounter.jsx';
 import LoginForm from './login.jsx';
 import SignUp from './signup.jsx';
+import SearchFilter from './searchfilter.jsx';
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -47,6 +48,7 @@ function App() {
   return (
 
     <div>
+      <SearchFilter />
       <SignUp />
       <LoginForm />
       <CharacterCounter />
