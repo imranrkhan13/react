@@ -6,10 +6,10 @@ function Limit(){
     return(
         <div>
             <h2>{number}</h2>
-            <button 
+            <button className="m-1"
             onClick={() => setNumber(number + 1)}
             disabled = {number >=10}>+</button>
-            <button 
+            <button className="m-1"
             onClick={() => setNumber(number - 1)}
             disabled = {number == 0}>-</button>
         </div>

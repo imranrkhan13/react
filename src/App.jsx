@@ -24,6 +24,8 @@ import Dasboard from './dashboard(liftup).jsx';
 import ONOFF from './onoff.jsx'
 import Text from './textotggle.jsx';
 import Limit from './limitnumber.jsx';
+import ItemDelete from './itemdelete.jsx';
+
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -53,6 +55,7 @@ function App() {
   return (
 
     <div>
+      < ItemDelete/>
       < Limit/>
       < Text/>
       <ONOFF />

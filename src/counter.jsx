@@ -13,7 +13,10 @@ function Counter() {
         }
     }
     function Reset() {
-        if (window.confirm("Are you sure you want to reset????")) {
+        if(number === 0){
+            alert("Start the counter to reset")
+        }
+        else {(window.confirm("Are you sure you want to reset????")) 
             setNumber(0);
         }
     }
