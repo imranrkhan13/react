@@ -18,6 +18,7 @@ function UserPro() {
 
     return (
         <div>
+            <h2>Form</h2>
             <input className="form-control m-3" type="name"
                 name="name"
                 placeholder="Enter name"
