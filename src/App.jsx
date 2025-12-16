@@ -25,6 +25,7 @@ import ONOFF from './onoff.jsx'
 import Text from './textotggle.jsx';
 import Limit from './limitnumber.jsx';
 import ItemDelete from './itemdelete.jsx';
+import UserPro from './userpro.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -55,6 +56,7 @@ function App() {
   return (
 
     <div>
+      < UserPro/>
       < ItemDelete/>
       < Limit/>
       < Text/>
