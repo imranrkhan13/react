@@ -28,7 +28,10 @@ import ItemDelete from './itemdelete.jsx';
 import UserPro from './userpro.jsx';
 import Title from './TitleUpdate.jsx';
 import PeopleList from './fetchdata.jsx';
-import Timer from './timer.jsx'
+import Timer from './timer.jsx';
+import Post from './fetchpost.jsx';
+
+
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -58,6 +61,7 @@ function App() {
   return (
 
     <div>
+      < Post/>
       < Timer/>
       < PeopleList/>
       < Title/>
