@@ -26,7 +26,9 @@ import Text from './textotggle.jsx';
 import Limit from './limitnumber.jsx';
 import ItemDelete from './itemdelete.jsx';
 import UserPro from './userpro.jsx';
-import Title from './TitleUpdate.jsx'
+import Title from './TitleUpdate.jsx';
+import PeopleList from './fetchdata.jsx';
+
 function UserCard() {
   const name = "Imran";
   const Age = "32";
@@ -56,6 +58,7 @@ function App() {
   return (
 
     <div>
+      < PeopleList/>
       < Title/>
       < UserPro/>
       < ItemDelete/>
