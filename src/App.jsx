@@ -30,7 +30,7 @@ import Title from './TitleUpdate.jsx';
 import PeopleList from './fetchdata.jsx';
 import Timer from './timer.jsx';
 import Post from './fetchpost.jsx';
-
+import ThemeApp from './themecontext.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -61,6 +61,7 @@ function App() {
   return (
 
     <div>
+      <ThemeApp />
       < Post/>
       < Timer/>
       < PeopleList/>
