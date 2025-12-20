@@ -31,6 +31,7 @@ import PeopleList from './fetchdata.jsx';
 import Timer from './timer.jsx';
 import Post from './fetchpost.jsx';
 import ThemeApp from './themecontext.jsx';
+import Themetoggle from './themechange.jsx'
 
 function UserCard() {
   const name = "Imran";
@@ -61,6 +62,7 @@ function App() {
   return (
 
     <div>
+      <Themetoggle />
       <ThemeApp />
       < Post/>
       < Timer/>
