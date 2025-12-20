@@ -31,7 +31,9 @@ import PeopleList from './fetchdata.jsx';
 import Timer from './timer.jsx';
 import Post from './fetchpost.jsx';
 import ThemeApp from './themecontext.jsx';
-import Themetoggle from './themechange.jsx'
+import Themetoggle from './themechange.jsx';
+import Namesaver from './namesaver.jsx';
+import PersistentCounter from './counterwithstorage.jsx';
 
 function UserCard() {
   const name = "Imran";
@@ -62,6 +64,8 @@ function App() {
   return (
 
     <div>
+      <  PersistentCounter />
+      < Namesaver />
       <Themetoggle />
       <ThemeApp />
       < Post/>
