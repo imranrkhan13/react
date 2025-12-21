@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 
 function Title(){
-    const [name, setName] = useState("");
+    const [name, setName] = useState(() =>{
+        return(localStorage.getItem("name" || ""))
+    });
+
+    useEffect(() => {
+        localStorage.setItem("name", name);
+    }, [name])
 
     useEffect((e) => {
         if(name){
