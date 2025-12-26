@@ -2,14 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Counter from './counter.jsx';
-import Greeting from './Greetings.jsx';
-
-
+import TemporaryName from './scrimba/index.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Greeting />
-    <Counter />
+    <TemporaryName />
     <App />
   </StrictMode>,
 )
