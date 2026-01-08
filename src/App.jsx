@@ -63,7 +63,7 @@ function App() {
 
   return (
 
-    <div>
+    <div >
       <  PersistentCounter />
       < Namesaver />
       <Themetoggle />
@@ -177,6 +177,7 @@ function App() {
       <Todo />
     
     </div>
+    
   );
 }
 
