@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
+    display: flex;
+        flex-direction: column;
     padding: 20px;
     font-family: "poppins", sans-serif;
     background: #27292c;
@@ -8,19 +12,39 @@ body {
 h1 {
     margin-top: 30px;
 }
-.header{
+
+.header {
+    background-color: #205ab1;
+    height: 10vh;
+    width: 169vh;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-list{
+
+.nav-list {
+    margin-right: 2rem;
     list-style: none;
     display: flex;
 }
-.navitems{
+
+.navitems {
     margin-left: 3rem;
     font-size: 1.1rem;
 }
-.navlogo{
+
+.navlogo {
+    margin-left: 2rem;
     width: 45px;
+}
+.foota{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+   
 }
